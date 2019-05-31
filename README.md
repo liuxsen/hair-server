@@ -43,4 +43,8 @@ npx sequelize db:migrate
 npx sequelize db:migrate:undo
 # 可以通过 `db:migrate:undo:all` 回退到初始状态
 npx sequelize db:migrate:undo:all
+# 新建数据初始化文件
+sequelize seed:create --name seed-file
+# 执行初始化
+sequelize db:seed:all
 ```

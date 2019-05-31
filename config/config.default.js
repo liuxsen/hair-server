@@ -22,7 +22,7 @@ module.exports = appInfo => {
   config.keys = appInfo.name + '_1558173373648_2345';
 
   // add your middleware config here
-  config.middleware = [];
+  config.middleware = ['auth'];
 
   // add your user config here
   const userConfig = {
@@ -31,7 +31,7 @@ module.exports = appInfo => {
 
   config.sequelize = {
     dialect: 'mysql',
-    host: 'localhost',
+    host: '101.200.48.138',
     port: 3306,
     database: 'db',
     username: 'root',

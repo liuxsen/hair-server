@@ -7,9 +7,12 @@
     "declarations": true
   },
   "dependencies": {
+    "bcrypt": "^3.0.6",
     "egg": "^2.15.1",
     "egg-scripts": "^2.11.0",
     "egg-sequelize": "^5.0.0",
+    "egg-validate": "^2.0.2",
+    "jsonwebtoken": "^8.5.1",
     "mysql2": "^1.6.5"
   },
   "devDependencies": {
@@ -37,7 +40,8 @@
     "cov": "egg-bin cov",
     "lint": "eslint .",
     "ci": "npm run lint && npm run cov",
-    "autod": "autod"
+    "autod": "autod",
+    "seed": "sequelize db:seed:all"
   },
   "ci": {
     "version": "10"
