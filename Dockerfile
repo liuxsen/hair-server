@@ -1,4 +1,6 @@
-FROM ubuntu
+FROM node
 
-WORKDIR /opt/app
-ADD . /opt/app
+WORKDIR /app
+ADD . /app
+EXPOSE 7001
+CMD [ "npm run start" ]

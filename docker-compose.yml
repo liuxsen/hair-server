@@ -20,4 +20,6 @@ services:
   node:
     build: .
     tty: true
+    ports:
+      - '7001:7001'
     container_name: node-server
